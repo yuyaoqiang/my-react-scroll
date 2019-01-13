@@ -1,0 +1,43 @@
+.scroll-wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .scroll-container-wrap{
+        position: relative;
+        background: #ffffff;
+        overflow: hidden;
+        z-index: 1;
+        .pullUp-wrap{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 0 24px 0  ;
+            .loading-wrap{
+                img {
+                    width: 20px;
+                    height: 20px;
+                    display: block;
+                }
+            }
+        }
+    }
+    .pulldown-wrap{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all;
+        .loading-wrap{
+            margin-top: 10px;
+            img {
+                width: 20px;
+                height: 20px;
+                display: block;
+            }
+        }
+    }
+}
